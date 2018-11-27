@@ -19,6 +19,7 @@ General Usage Instructions</br>
 7. Create a RunAsAccount for the Automation Account and Give to access to the Read Directory Data using the Windows Azure AD API
 
 ## Parameters
+- **AzureConnectionName** - A string containing the name of the Service Principal Connection to use in the Runbook 
 - **AdobeGroup** - A string containing the name of the Adobe Group to Sync Federated Users from an Azure AD Group
 - **ADGroup** - A string containing the name of the Azure AD to Sync Federated Users to an Adobe Group
 
@@ -26,7 +27,7 @@ General Usage Instructions</br>
 - Azure Tenant 
 - Azure Automation Account
 - AzureAD Module 
-- AdobeUM Module
+- AdobeUM.AzureAD Module 
 
 ## Versioning
 [Github](http://github.com/) for version control.
