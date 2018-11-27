@@ -40,6 +40,9 @@
 
 param
 (   
+    [Parameter(Mandatory = $true)]
+    [String]$AzureConnectionName,
+
     [parameter(Mandatory=$true)]
     [string]$AdobeGroup,
 
@@ -48,12 +51,10 @@ param
 )
 
 #region Main Code
-$connectionName = "AzureRunAsConnection"
-
 try
 {
     Write-Output "Getting the connection 'AzureRunAsConnection'..."
-    $servicePrincipalConnection = Get-AutomationConnection -Name $connectionName
+    $servicePrincipalConnection = Get-AutomationConnection -Name $AzureConnectionName
 
     Write-Output "Getting the connection Variable Assets..."
     $APIKey = Get-AutomationVariable -Name 'APIKey'
