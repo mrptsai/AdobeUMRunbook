@@ -1,4 +1,5 @@
-﻿#Requires -Modules AzureAD, AdobeUM  
+﻿#Requires -Modules AzureAD
+#Requires -Modules AdobeUM.AzureAD
 <#
 .SYNOPSIS
     A Runbook to sync Azure AD Group with Adobe using a PowerShell Module framework (AdobeUM) for communicating with Adobe's User Management API
