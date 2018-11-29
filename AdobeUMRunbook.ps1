@@ -57,11 +57,11 @@ try
     $servicePrincipalConnection = Get-AutomationConnection -Name $AzureConnectionName
 
     Write-Output "Getting the connection Variable Assets..."
-    $APIKey = Get-AutomationVariable -Name 'APIKey'
-    $OrganizationID = Get-AutomationVariable -Name 'OrganizationID'
-    $ClientSecret = Get-AutomationVariable -Name 'ClientSecret'
-    $TechnicalAccountID = Get-AutomationVariable -Name 'TechnicalAccountID'
-    $TechnicalAccountEmail = Get-AutomationVariable -Name 'TechnicalAccountEmail'
+    $APIKey = Get-AutomationVariable -Name 'AdobeAPIKey'
+    $OrganizationID = Get-AutomationVariable -Name 'AdobeOrganizationID'
+    $ClientSecret = Get-AutomationVariable -Name 'AdobeClientSecret'
+    $TechnicalAccountID = Get-AutomationVariable -Name 'AdobeTechnicalAccountID'
+    $TechnicalAccountEmail = Get-AutomationVariable -Name 'AdobeTechnicalAccountEmail'
 
     Write-Output "Getting the Adobe Certificate Asset..."
     $SignatureCert = Get-AutomationCertificate -Name 'AdobeAuthCertificate'
